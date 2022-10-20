@@ -1,41 +1,4 @@
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Kristi", cursive;
-  }
 
-  html {
-    font-size: 62.5%;
-  }
-
-  .main_header {
-    width: 100vw;
-    height: 100vh;
-    background-color: hsl(0, 0%, 94%);
-    display: grid;
-    place-items: center;
-  }
-
-  .center_div {
-    min-width: 50vw;
-    height: 40vh;
-    color: #000;
-    text-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
-    font-size: 7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    text-align:center;
-  }
-
-@media (max-width: 768px) {
-    html {
-      font-size: 35%;
-    }
-  }
-   */
    body, html{
 	margin: 0px;
 	height: 100%;
@@ -51,28 +14,45 @@
   position: absolute;
   transform: translate(-50%, -50%);
   top: 50%;
-  left: 50%;
-  text-size-adjust: 170%;
+  left: 51%;
+  text-align: center;
+  text-size-adjust: 303%;
+  width: 70%;
 
 }
-h1{ 
+
+p{ 
   position: absolute;
-  left:55%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  top:40%;
-  text-size-adjust: 10px;
+  top: 40%;
+  font-size: 50px;
 
 }
+.pp{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 60%;
+  font-size: 50px;
+
+}
+.header{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left:58%;
+  top: 10%;
+  font-size: 32px;
+  width: 90%;
+}
+
 h3{
   position: absolute;
   transform: translate(-50%, -50%);
-  left:50%;
-  top: 60%;
-  text-size-adjust: 140%;
-
-  /* transform:rotate(0deg);
-  transition:transfor calc(var(--t) * 1s);
-  transition:transform calc(var(--t) * 1s); */
+  left:68%;
+  top: 88%;
+  font-size: 30px;
+  width: 60%;
 }
 .mobile-block {
   display: none;
@@ -183,10 +163,6 @@ h3{
   .content-header .content-title {
     margin-bottom: 1rem;
   }
-
-  /* .card-header input.form-control {
-    margin-bottom: 1rem;
-  } */
 
   .order-info-wrap .icontext {
     margin-bottom: 1rem;

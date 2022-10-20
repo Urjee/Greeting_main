@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Талархал</title>
+    <!-- Google Font-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+        }
+      body {
+        background-color: #fdbf00;
+      }
+      .card {
+        width: 640px;
+        height: 400px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        -webkit-perspective: 1200px;
+        perspective: 1200px;
+        transition: 1s;
+      }
+      .card:hover {
+        transform: rotate(-5deg);
+      }
+      .card:hover .outside {
+        transform: rotateY(-130deg);
+      }
+      .outside,
+      .inside {
+        height: 100%;
+        width: 50%;
+        position: absolute;
+        left: 50.1%;
+      }
+      .inside {
+        background: linear-gradient(to right, #e7e7e7, #ffffff 30%);
+        line-height: 3;
+        padding: 0 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        left: 50%;
+      }
+      .outside {
+        transform-style: flat;
+        z-index: 1;
+        transform-origin: left;
+        transition: 2s;
+        cursor: pointer;
+      }
+      .front,
+      .back {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        transform: rotateX(0deg);
+      }
+      .front {
+        background-color: #ffffff;
+      }
+      .back {
+        transform: rotateY(180deg);
+        background: linear-gradient(to left, #e7e7e7, #ffffff 30%);
+      }
+      .cake {
+        width: 100%;
+        position: absolute;
+        bottom: 30px;
+      }
+      .click{
+        height: 130px;
+          position: absolute;
+          margin: auto;
+          left: 0;
+          right: 0;
+          bottom: 275px;
+      }
+      .greeting{
+        height: 35px;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 0;
+        bottom: 202px;
+      font-size: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      h1{
+        height: 25px;
+        position: absolute;
+        margin: auto;
+        left: 25%;
+        right: 10%;
+        bottom: 302px;
+      }
+      .candle:before {
+        content: "";
+        position: absolute;
+        height: 16px;
+        width: 16px;
+        background-color: #ffa500;
+        border-radius: 0 50% 50% 50%;
+        bottom: 48px;
+        transform: rotate(45deg);
+        left: -1px;
+      }
+      .outside p {
+        font-size: 15px;
+        text-transform: uppercase;
+        margin-top: 30px;
+        text-align: center;
+        letter-spacing: 6px;
+        color: #000046;
+      }
+      .inside h1 {
+        font-size: 120px;
+        line-height: 120px;
+      }
+        img {
+          font-size: 7px;
+          text-transform: uppercase;
+          margin-top: 130px;
+          margin-left: 2rem;
+          text-align: center;
+          letter-spacing: 8px;
+          width: 16rem;
+      }
+      .mcs {
+        background-size: 40%;
+        background-repeat: no-repeat;
+        right:10%;
+        margin-right:80%;
+        margin-left: 7px;
+        margin-top: 10%;
+        width: 100px;
+
+      }
+      .pp {
+        position: absolute;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          top: 75%;
+          width: 70%;
+          text-align: center;
+
+      }
+      .hee{
+        position: absolute;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          top: 16%;
+          width: 100%;
+          font-size: 15px;
+          text-align: center;
+      }
+      .phto{
+        position: absolute;
+          left: 46%;
+          transform: translate(-50%, -50%);
+          width: 40%;
+          top: 5%;
+          font-size: 15px;
+          text-align: center;
+        
+      }
+      .chanar{
+        position: absolute;
+          left: 41%;
+          transform: translate(-50%, -50%);
+          width: 84%;
+          top: 44%;
+          font-size: 15px;
+          text-align: center;
+      }
+      .foot{
+        position: absolute;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          top: 89%;
+          width: 100%;
+          font-size: 15px;
+          text-align: center;
+      }
+
+      @media (max-width: 768px) {
+        .card{
+          margin-left: -80%;
+        }
+        .click{
+        margin-bottom: -300px;
+        margin-left:90px;
+        color: white;
+        }
+        }
+
+      @media (min-width: 992px) {
+        .click {
+        display: none;
+        }
+        .card {
+        margin-left: 270px;
+        }
+      }
+      </style>
+
+
+    <div class="card">
+      <div class="outside">
+        <div class="front">
+          <img class="mcs" src="image/cola.png">
+          <h1>Талархал</h1>
+          <img  class="chanar" src="image/Chanar.JPG" alt="" />
+        
+          
+          <p class="greeting" >Чанарын хэлтэсийн хамт олонд</p>
+        </div>
+        <div class="back"></div>
+      </div>
+      
+      <div class="inside">
+        <p class="hee">Та бол хамгийн шилдэг хамтрагч</p>
+        <p class="pp">Та бүхэндээ ажлын амжилт хүсье❤️</p>
+        <img class="phto" src="image/gift.png" alt="">
+        <p class="foot">Мэдээллийн технологийн хамт олны зүгээс</p>
+      </div>
+
+    </div>
+    
+<p class="click">Зурган дээр дарна уу!</p>
+
+  </body>
+</html>
